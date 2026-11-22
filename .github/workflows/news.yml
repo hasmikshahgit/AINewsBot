@@ -12,7 +12,7 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install feedparser requests python-dotenv
-      - run: python news_bot.py
+      - run: python ai_news_bot.py
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
